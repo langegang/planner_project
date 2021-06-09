@@ -19,35 +19,37 @@
   <div class="container-fluid overflow-hidden">
     <div class="row vh-100 overflow-auto">
 
-        <!-- Sidebar on desktop, nav bar on mobile -->
-        <div class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">
-            <!-- 'Add a plant' header section -->
-            <section class="py-5 text-center container">
-                <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Plant Website</h1>
-                    <p class="lead text-white">Create a task!</p>
-                    <form>
-                        <div class="form-outline p-2">
-                            <input type="text" id="add_name_of_task" class="form-control" placeholder="add name of task" />
-                        </div>
-                        <div class="form-outline p-2">
-                            <input type="textarea" id="add_description_of_task" class="form-control" placeholder="add description of task" />
-                        </div>
-                        <div class="form-outline p-2">
-                            <input type="text" id="assign_to_plant_sitter" class="form-control" placeholder="assign to plant sitter" />
-                        </div>
-                        <div class="form-outline p-2">
-                            <input type="text" id="add_due_date" class="form-control" placeholder="add due date" />
-                        </div>
-                        <a href="#" class="btn btn-primary my-2">Add Task</a>
-                    </form>
+      <!-- Sidebar on desktop, nav bar on mobile -->
+      <div class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">
+        <!-- 'Add a plant' header section -->
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Plant Website</h1>
+              <p class="lead text-white">Create a task!</p>
+              <form>
+                <div class="form-outline p-2">
+                  <input type="text" id="add_name_of_task" class="form-control" placeholder="add name of task" />
                 </div>
+                <div class="form-outline p-2">
+                  <input type="textarea" id="add_description_of_task" class="form-control"
+                    placeholder="add description of task" />
                 </div>
-            </section>  
+                <div class="form-outline p-2">
+                  <input type="text" id="assign_to_plant_sitter" class="form-control"
+                    placeholder="assign to plant sitter" />
+                </div>
+                <div class="form-outline p-2">
+                  <input type="text" id="add_due_date" class="form-control" placeholder="add due date" />
+                </div>
+                <a href="#" class="btn btn-primary my-2">Add Task</a>
+              </form>
+            </div>
+          </div>
+        </section>
 
-            <!-- Old filler content from template -->
-            <!--
+        <!-- Old filler content from template -->
+        <!--
             <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
                 <a href="/" class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <span class="fs-5">B<span class="d-none d-sm-inline">rand</span></span>
@@ -107,15 +109,15 @@
                 
             </div>
             -->
-        </div>
+      </div>
 
-        <!-- Main body section -->
-        <div class="col d-flex flex-column h-100">
-            <main class="row">
-                <div class="col pt-4">
-                    
-                    <!-- Old filler text from template -->
-                    <!--
+      <!-- Main body section -->
+      <div class="col d-flex flex-column h-100">
+        <main class="row">
+          <div class="col pt-4">
+
+            <!-- Old filler text from template -->
+            <!--
                     <h3>Vertical Sidebar that switches to Horizontal Navbar</h3>
                     <p class="lead">An example multi-level sidebar with collasible menu items. The menu functions like an "accordion" where only a single menu is be open at a time.</p>
                     <hr />
@@ -124,143 +126,195 @@
                     <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
                     -->
 
-                    <!-- Plant cards section -->
-                    <div class="album py-5 bg-light">
-                        <div class="container">
+            <!-- Plant cards section -->
+            <div class="album py-5 bg-light">
+              <div class="container">
 
-                        <!-- Beginning of Cards -->
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <!-- Beginning of Cards -->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                            <!-- Card Example 1 -->
-                            <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="https://picsum.photos/seed/3/400" alt="" width="100%" aria-label="Placeholder: Thumbnail">
-                                <div class="card-body">
-                                <ul class="list-group pb-3">
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg" width="16px" height="16px" alt="plant icon"> Plant Name: <span class="text-body h6">Fern</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/description.svg" width="14px" height="14px" alt="description icon"> Description: <p class="text-body">Water it all the time and put it in the sun.</p></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg" width="13px" height="13px" alt="person icon"> Assigned to: <span class="text-body">Evan</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg" width="16px" height="16px" alt="calendar icon"> Due Date: <span class="text-body">10/20/30</span></li>
-                                </ul>
-                                <div class="d-flex justify-content-end align-items-center">
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-
-                            <!-- Card Example 2 -->
-                            <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="https://picsum.photos/seed/00/400" alt="" width="100%" aria-label="Placeholder: Thumbnail">
-                                <div class="card-body">
-                                <ul class="list-group pb-3">
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg" width="16px" height="16px" alt="plant icon"> Plant Name: <span class="text-body h6">Succulent</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/description.svg" width="14px" height="14px" alt="description icon"> Description: <p class="text-body">Never water it, let it heal your mind and soul.</p></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg" width="13px" height="13px" alt="person icon"> Assigned to: <span class="text-body">Katheryn</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg" width="16px" height="16px" alt="calendar icon"> Due Date: <span class="text-body">18/36/02</span></li>
-                                </ul>
-                                <div class="d-flex justify-content-end align-items-center">
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-
-                            <!-- Card Example 3 -->
-                            <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="https://picsum.photos/seed/005/400" alt="" width="100%" aria-label="Placeholder: Thumbnail">
-                                <div class="card-body">
-                                <ul class="list-group pb-3">
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg" width="16px" height="16px" alt="plant icon"> Plant Name: <span class="text-body h6">Burning Bush</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/description.svg" width="14px" height="14px" alt="description icon"> Description: <p class="text-body">Listen to what it has to say I guess, idfk</p></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg" width="13px" height="13px" alt="person icon"> Assigned to: <span class="text-body">Supo</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg" width="16px" height="16px" alt="calendar icon"> Due Date: <span class="text-body">10/31/1472</span></li>
-                                </ul>
-                                <div class="d-flex justify-content-end align-items-center">
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-
-                            <!-- Card Example 4 -->
-                            <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="https://picsum.photos/seed/0004/400" alt="" width="100%" aria-label="Placeholder: Thumbnail">
-                                <div class="card-body">
-                                <ul class="list-group pb-3">
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg" width="16px" height="16px" alt="plant icon"> Plant Name: <span class="text-body h6">Literally a redwood</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/description.svg" width="14px" height="14px" alt="description icon"> Description: <p class="text-body">Why do you have one of these</p></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg" width="13px" height="13px" alt="person icon"> Assigned to: <span class="text-body">Mira</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg" width="16px" height="16px" alt="calendar icon"> Due Date: <span class="text-body">1/2/3</span></li>
-                                </ul>
-                                <div class="d-flex justify-content-end align-items-center">
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-
-                            <!-- Card Example 5 -->
-                            <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="https://picsum.photos/seed/00205/400" alt="" width="100%" aria-label="Placeholder: Thumbnail">
-                                <div class="card-body">
-                                <ul class="list-group pb-3">
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg" width="16px" height="16px" alt="plant icon"> Plant Name: <span class="text-body h6">A piece of moss</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/description.svg" width="14px" height="14px" alt="description icon"> Description: <p class="text-body">Water it continuously, pet it and tell it it's a good dog</p></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg" width="13px" height="13px" alt="person icon"> Assigned to: <span class="text-body">Another dog</span></li>
-                                    <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg" width="16px" height="16px" alt="calendar icon"> Due Date: <span class="text-body">Whenever, bro</span></li>
-                                </ul>
-                                <div class="d-flex justify-content-end align-items-center">
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
+                  <!-- Card Example 1 -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://picsum.photos/seed/3/400" alt="" width="100%"
+                        aria-label="Placeholder: Thumbnail">
+                      <div class="card-body">
+                        <ul class="list-group pb-3">
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg"
+                              width="16px" height="16px" alt="plant icon"> Plant Name: <span
+                              class="text-body h6">Fern</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2"
+                              src="/resources/images/description.svg" width="14px" height="14px" alt="description icon">
+                            Description: <p class="text-body">Water it all the time and put it in the sun.</p>
+                          </li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg"
+                              width="13px" height="13px" alt="person icon"> Assigned to: <span
+                              class="text-body">Evan</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg"
+                              width="16px" height="16px" alt="calendar icon"> Due Date: <span
+                              class="text-body">10/20/30</span></li>
+                        </ul>
+                        <div class="d-flex justify-content-end align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                          </div>
                         </div>
-                        </div>
+                      </div>
                     </div>
-                </div>
-            </main>
-            <footer class="row bg-light py-4 mt-auto">
-                <div class="col">
-                    <!-- Footer -->
-                    <footer class="text-muted py-5">
-                        <div class="container">
-                        <p class="float-end mb-1">
-                            <a href="#">Back to top</a>
-                        </p>
-                        <p class="mb-1">Created by Katheryn Conley, Mira Goins, Evan Lange, and Supo Techagumthorn.</p>
-                        <p class="mb-0">A final project for <a href="https://usa.generation.org/" target="_blank">Generation</a>'s Junior
-                            Web Developer program.</p>
+                  </div>
+
+                  <!-- Card Example 2 -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://picsum.photos/seed/00/400" alt="" width="100%"
+                        aria-label="Placeholder: Thumbnail">
+                      <div class="card-body">
+                        <ul class="list-group pb-3">
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg"
+                              width="16px" height="16px" alt="plant icon"> Plant Name: <span
+                              class="text-body h6">Succulent</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2"
+                              src="/resources/images/description.svg" width="14px" height="14px" alt="description icon">
+                            Description: <p class="text-body">Never water it, let it heal your mind and soul.</p>
+                          </li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg"
+                              width="13px" height="13px" alt="person icon"> Assigned to: <span
+                              class="text-body">Katheryn</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg"
+                              width="16px" height="16px" alt="calendar icon"> Due Date: <span
+                              class="text-body">18/36/02</span></li>
+                        </ul>
+                        <div class="d-flex justify-content-end align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                          </div>
                         </div>
-                    </footer>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card Example 3 -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://picsum.photos/seed/005/400" alt="" width="100%"
+                        aria-label="Placeholder: Thumbnail">
+                      <div class="card-body">
+                        <ul class="list-group pb-3">
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg"
+                              width="16px" height="16px" alt="plant icon"> Plant Name: <span
+                              class="text-body h6">Burning Bush</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2"
+                              src="/resources/images/description.svg" width="14px" height="14px" alt="description icon">
+                            Description: <p class="text-body">Listen to what it has to say I guess, idfk</p>
+                          </li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg"
+                              width="13px" height="13px" alt="person icon"> Assigned to: <span
+                              class="text-body">Supo</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg"
+                              width="16px" height="16px" alt="calendar icon"> Due Date: <span
+                              class="text-body">10/31/1472</span></li>
+                        </ul>
+                        <div class="d-flex justify-content-end align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card Example 4 -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://picsum.photos/seed/0004/400" alt="" width="100%"
+                        aria-label="Placeholder: Thumbnail">
+                      <div class="card-body">
+                        <ul class="list-group pb-3">
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg"
+                              width="16px" height="16px" alt="plant icon"> Plant Name: <span
+                              class="text-body h6">Literally a redwood</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2"
+                              src="/resources/images/description.svg" width="14px" height="14px" alt="description icon">
+                            Description: <p class="text-body">Why do you have one of these</p>
+                          </li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg"
+                              width="13px" height="13px" alt="person icon"> Assigned to: <span
+                              class="text-body">Mira</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg"
+                              width="16px" height="16px" alt="calendar icon"> Due Date: <span
+                              class="text-body">1/2/3</span></li>
+                        </ul>
+                        <div class="d-flex justify-content-end align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card Example 5 -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://picsum.photos/seed/00205/400" alt="" width="100%"
+                        aria-label="Placeholder: Thumbnail">
+                      <div class="card-body">
+                        <ul class="list-group pb-3">
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/plant.svg"
+                              width="16px" height="16px" alt="plant icon"> Plant Name: <span class="text-body h6">A
+                              piece of moss</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2"
+                              src="/resources/images/description.svg" width="14px" height="14px" alt="description icon">
+                            Description: <p class="text-body">Water it continuously, pet it and tell it it's a good dog
+                            </p>
+                          </li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/person.svg"
+                              width="13px" height="13px" alt="person icon"> Assigned to: <span class="text-body">Another
+                              dog</span></li>
+                          <li class="list-group-item text-muted"><img class="m-2" src="/resources/images/calendar.svg"
+                              width="16px" height="16px" alt="calendar icon"> Due Date: <span
+                              class="text-body">Whenever, bro</span></li>
+                        </ul>
+                        <div class="d-flex justify-content-end align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="row bg-light py-4 mt-auto">
+          <div class="col">
+            <!-- Footer -->
+            <footer class="text-muted py-5">
+              <div class="container">
+                <p class="float-end mb-1">
+                  <a href="#">Back to top</a>
+                </p>
+                <p class="mb-1">Created by Katheryn Conley, Mira Goins, Evan Lange, and Supo Techagumthorn.</p>
+                <p class="mb-0">A final project for <a href="https://usa.generation.org/"
+                    target="_blank">Generation</a>'s Junior
+                  Web Developer program.</p>
+              </div>
             </footer>
-        </div>
+          </div>
+        </footer>
+      </div>
     </div>
   </div>
 
