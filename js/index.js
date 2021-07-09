@@ -1,8 +1,20 @@
-let form = document.getElementById("new_task_submit")
-const myTask = new TaskManager();
-myTask.addTask('Water cactus', '2 years old', 'Mom', 'Yesterday');
-console.log(myTask.tasks);
+// Variables
+const myTasks = new TaskManager();
+let form = document.getElementById("new_task_form");
+
+// Test task
+// myTasks.addTask('Water cactus', '2 years old', 'Mom', 'Yesterday');
+
+// Create new task object on submit
 form.addEventListener("submit", function(event){
-    console.log(form.elements[0].value);
-    event.preventDefault()
+    // Call addTask with form inputs
+    myTasks.addTask(
+        form.elements[0].value,
+        form.elements[1].value,
+        form.elements[2].value,
+        form.elements[3].value
+    )
+    console.log(myTasks.tasks);
+    event.preventDefault();
+    form.reset();
 });

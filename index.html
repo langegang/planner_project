@@ -24,18 +24,18 @@
           <div class="row py-lg-5">
             <div class="col-lg-12 col-xl-12 col-md-8 mx-auto">
               <p class="lead text-light">Create a task!</p>
-              <form id="new_task_submit">
+              <form id="new_task_form">
                 <div class="form-outline py-2">
-                  <input type="text" id="add_name_of_task" class="form-control" placeholder="add name of task" />
+                  <input required type="text" id="add_name_of_task" class="form-control" placeholder="add name of task" />
                 </div>
                 <div class="form-outline py-2">
-                  <input type="textarea" id="add_description_of_task" class="form-control" placeholder="add description of task" />
+                  <input required type="textarea" id="add_description_of_task" class="form-control" placeholder="add description of task" />
                 </div>
                 <div class="form-outline py-2">
-                  <input type="text" id="assign_to_plant_sitter" class="form-control" placeholder="assign to plant sitter" />
+                  <input required type="text" id="assign_to_plant_sitter" class="form-control" placeholder="assign to plant sitter" />
                 </div>
                 <div class="form-outline py-2">
-                  <input type="text" id="add_due_date" class="form-control" placeholder="add due date" />
+                  <input required type="text" id="add_due_date" class="form-control" placeholder="add due date" />
                 </div>
                 <input type="submit" class="btn btn-primary my-2">Add Task</input>
               </form>
