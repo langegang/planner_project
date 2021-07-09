@@ -14,7 +14,11 @@ form.addEventListener("submit", function(event){
         form.elements[2].value,
         form.elements[3].value
     )
-    console.log(myTasks.tasks);
+    // call the TaskManager's render method.
+    myTasks.render();
     event.preventDefault();
     form.reset();
 });
+
+// const cardHtml = createTaskHtml('Basil', 'I love me basil', 'Supoman Comings', 999);
+// console.log(cardHtml);
