@@ -1,6 +1,6 @@
-const createTaskHtml = (name, description, assignedTo, dueDate, status) => {
+const createTaskHtml = (name, description, assignedTo, dueDate, status, id) => {
     const html = `
-        <div class="col">
+        <div class="col data-task-${id}">
             <div class="card shadow-sm">
                 <img src="https://picsum.photos/400" alt="" width="100%" aria-label="Placeholder: Thumbnail">
                 <div class="card-body">
@@ -9,11 +9,10 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status) => {
                         <li class="list-group-item text-muted"><img class="m-2" src="./resources/images/description.svg" width="14px" height="14px" alt="description icon"> Description: <p class="text-body">${description}</p></li>
                         <li class="list-group-item text-muted"><img class="m-2" src="./resources/images/person.svg" width="13px" height="13px" alt="person icon"> Assigned to: <span class="text-body">${assignedTo}</span></li>
                         <li class="list-group-item text-muted"><img class="m-2" src="./resources/images/calendar.svg" width="16px" height="16px" alt="calendar icon"> Due Date: <span class="text-body">${dueDate}</span></li>
-                        <li class="list-group-item text-muted"><img class="m-2" src="#" width="16px" height="16px" alt="status icon">Status: <span class="text-body">${status}</span></li>
                     </ul>
                     <div class="d-flex justify-content-end align-items-center">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-success">Mark Complete</button>
+                            <button type="button" class="btn btn-sm btn-outline-success done-button">Mark Complete</button>
                             <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                             <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
                         </div>
@@ -31,7 +30,7 @@ class TaskManager {
         this.currentId = currentId;
     }
 
-    addTask(name, description, assignedTo, dueDate, status = 'TODO') {
+    addTask(name, description, assignedTo, dueDate, status = TODO) {
         this.currentId++;
         this.tasks.push({
             id: this.currentId,
@@ -53,7 +52,7 @@ class TaskManager {
             console.log(formattedDate);
             
             // Create a taskHtml variable to store the HTML of the current task, by calling the createTaskHtml function and using the properties of the current task, as well as the new formattedDate variable for the parameters.
-            let taskHtml = createTaskHtml(task.name, task.description, task.assignedTo, formattedDate, task.status);
+            let taskHtml = createTaskHtml(task.name, task.description, task.assignedTo, formattedDate, task.status, task.id);
 
             // push the taskHtml into the tasksHtmlList array.
             tasksHtmlList.push(taskHtml);

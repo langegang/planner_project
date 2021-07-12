@@ -1,12 +1,10 @@
-// Variables
+// Variables and HTML elements
 const myTasks = new TaskManager();
-let form = document.getElementById("new_task_form");
-
-// Test task
-// myTasks.addTask('Water cactus', '2 years old', 'Mom', 'Yesterday');
+const form = document.getElementById("new_task_form");
+const taskList = document.querySelector("#task-list");
 
 // Create new task object on submit
-form.addEventListener("submit", function(event){
+form.addEventListener('submit', function(event){
     // Call addTask with form inputs
     myTasks.addTask(
         form.elements[0].value,
@@ -20,5 +18,9 @@ form.addEventListener("submit", function(event){
     form.reset();
 });
 
-// const cardHtml = createTaskHtml('Basil', 'I love me basil', 'Supoman Comings', 999);
-// console.log(cardHtml);
+
+taskList.addEventListener('click', function(event){
+    if (event.target.classList.contains('done-button')) {
+        parentTask = event.target.parentNode.parentNode.parentNode.parentNode.parentNode;
+    }
+})
